@@ -12,6 +12,21 @@ const pessoa1 = {  // Declarando um objeto literal
     },
 };
 
+function pessoa() {
+    this.nome;
+    this.sobrenome;
+    this.idade;
+}
+
+const obj1 = new pessoa();
+obj1.nome = "David";
+obj1.sobrenome = "Rodrigues";
+obj1.idade = 22;
+
+console.log(`Meu nome é ${obj1.nome} ${obj1.sobrenome} e tenho ${obj1.idade} anos de idade.`);
+console.log(obj1);
+console.log(typeof obj1);
+
 pessoa1.fala();
 pessoa1.incrementaIdade();
 pessoa1.fala();
